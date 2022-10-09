@@ -1,9 +1,9 @@
 class TournamentInformation {
-  int theNumberOfEntryPeople;
-  int theNumberOfAlive;
-  int theNumberOfEntry;
-  int theNumberOfReEntry;
-  int theNumberOfAddOn;
+  int? theNumberOfEntryPeople;
+  int? theNumberOfAlive;
+  int? theNumberOfEntry;
+  int? theNumberOfReEntry;
+  int? theNumberOfAddOn;
   DateTime? updatedTime;
   String tournamentName;
   String entryFee;

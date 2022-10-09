@@ -33,10 +33,10 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
   );
 
   //stack等を計算させるコード
-  int get theNumberOfAlive => MyTournamentInformation.theNumberOfAlive;
-  int get theNumberOfEntry => MyTournamentInformation.theNumberOfEntry;
-  int get theNumberOfReEntry => MyTournamentInformation.theNumberOfReEntry;
-  int get theNumberOfAddOn => MyTournamentInformation.theNumberOfAddOn;
+  int? get theNumberOfAlive => MyTournamentInformation.theNumberOfAlive;
+  int? get theNumberOfEntry => MyTournamentInformation.theNumberOfEntry;
+  int? get theNumberOfReEntry => MyTournamentInformation.theNumberOfReEntry;
+  int? get theNumberOfAddOn => MyTournamentInformation.theNumberOfAddOn;
   int get startStack => int.parse(MyTournamentInformation.startStack);
   int get addOnStack => int.parse(MyTournamentInformation.addOnStack);
 
@@ -119,10 +119,10 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
                     ),
                     Text(
                       avel(
-                              theNumberOfAlive,
-                              theNumberOfEntry,
-                              theNumberOfReEntry,
-                              theNumberOfAddOn,
+                              theNumberOfAlive!,
+                              theNumberOfEntry!,
+                              theNumberOfReEntry!,
+                              theNumberOfAddOn!,
                               startStack,
                               addOnStack)
                           .toString(),
