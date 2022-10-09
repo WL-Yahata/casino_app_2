@@ -20,9 +20,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
     theNumberOfEntry: 31,
     theNumberOfReEntry: 23,
     theNumberOfAddOn: 22,
-  );
-  //あらかじめ店側に設定してもらうtornamentの情報
-  TournamentDetail MyTournamentDetail = TournamentDetail(
+    //あらかじめ店側に設定してもらうtornamentの情報
     tournamentName: 'Sunday Main Tournament',
     whichReEntry: 'あり',
     whichAddOn: 'あり',
@@ -39,8 +37,8 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
   int get theNumberOfEntry => MyTournamentInformation.theNumberOfEntry;
   int get theNumberOfReEntry => MyTournamentInformation.theNumberOfReEntry;
   int get theNumberOfAddOn => MyTournamentInformation.theNumberOfAddOn;
-  int get startStack => int.parse(MyTournamentDetail.startStack);
-  int get addOnStack => int.parse(MyTournamentDetail.addOnStack);
+  int get startStack => int.parse(MyTournamentInformation.startStack);
+  int get addOnStack => int.parse(MyTournamentInformation.addOnStack);
 
   int avel(int theNumberOfAlive, int theNumberOfEntry, int theNumberOfReEntry,
       int theNumberOfAddOn, int startStack, int addOnStack) {
@@ -67,7 +65,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
             height: 10,
           ),
           Text(
-            MyTournamentDetail.tournamentName,
+            MyTournamentInformation.tournamentName,
             style: const TextStyle(fontSize: 24, fontWeight: FontWeight.normal),
           ),
 
@@ -178,7 +176,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
                     Text(
-                      MyTournamentDetail.whichReEntry,
+                      MyTournamentInformation.whichReEntry,
                       style: const TextStyle(
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
@@ -188,7 +186,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
                     Text(
-                      MyTournamentDetail.whichAddOn,
+                      MyTournamentInformation.whichAddOn,
                       style: const TextStyle(
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
@@ -203,7 +201,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
                     Text(
-                      MyTournamentDetail.startStack.toString(),
+                      MyTournamentInformation.startStack.toString(),
                       style: const TextStyle(
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
@@ -213,7 +211,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
                     Text(
-                      MyTournamentDetail.addOnStack.toString(),
+                      MyTournamentInformation.addOnStack.toString(),
                       style: const TextStyle(
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
@@ -228,7 +226,7 @@ class _TournamentUiDetailState extends State<TournamentUiDetail> {
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
                     Text(
-                      MyTournamentDetail.timeOfBlind.toString(),
+                      MyTournamentInformation.timeOfBlind.toString(),
                       style: const TextStyle(
                           fontWeight: FontWeight.normal, color: Colors.black54),
                     ),
