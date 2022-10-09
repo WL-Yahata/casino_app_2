@@ -35,18 +35,6 @@ class _CashingPadeState extends State<CashingPade> {
     return Scaffold(
       backgroundColor: Colors.grey.withOpacity(0.2),
 
-      drawer: Drawer(
-        child: ListView.builder(
-          itemCount: 5,
-          itemBuilder: (BuildContext context, int index) {
-            return ListTile(
-              title: Text("Item $index"),
-            );
-          },
-        ),
-      ),
-
-
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.black45),
 
@@ -55,11 +43,17 @@ class _CashingPadeState extends State<CashingPade> {
 
         title: const Text('home', style: TextStyle(color: Colors.black54),),
 
-        
+
 
         backgroundColor: Colors.white,
         elevation: 1,
       ),
+
+
+
+
+
+
       body: SingleChildScrollView(
         child: Column(
           children: [
