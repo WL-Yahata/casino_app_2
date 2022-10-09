@@ -17,19 +17,7 @@ class _ListTournamentPageState extends State<ListTournamentPage> {
     final tournamentCollection =
         await FirebaseFirestore.instance.collection('TournamentList').get();
     final docs = tournamentCollection.docs;
-    for (var doc in docs) {
-      TournamentInformation fetchTournamentInformation = TournamentInformation(
-        tournamentName: doc.data()['tournamentName'],
-        entryFee: doc.data()['entryFee'],
-        startStack: doc.data()['startStack'],
-        whichReEntry: doc.data()['whichReEntry'],
-        reEntryFee: doc.data()['reEntryFee'],
-        whichAddOn: doc.data()['whichAddOn'],
-        addOnFee: doc.data()['addONFee'],
-        addOnStack: doc.data()['addOnStack'],
-        timeOfBlind: doc.data()['timeOfBlind'],
-      );
-    }
+    for (var doc in docs) {}
   }
 
   @override
