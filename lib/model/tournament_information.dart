@@ -5,18 +5,6 @@ class TournamentInformation {
   int theNumberOfReEntry;
   int theNumberOfAddOn;
   DateTime? updatedTime;
-
-  TournamentInformation({
-    required this.theNumberOfEntryPeople,
-    required this.theNumberOfAlive,
-    required this.theNumberOfEntry,
-    required this.theNumberOfReEntry,
-    required this.theNumberOfAddOn,
-    this.updatedTime,
-  });
-}
-
-class TournamentDetail {
   String tournamentName;
   String entryFee;
   String reEntryFee;
@@ -27,7 +15,13 @@ class TournamentDetail {
   String addOnStack;
   String timeOfBlind;
 
-  TournamentDetail({
+  TournamentInformation({
+    required this.theNumberOfEntryPeople,
+    required this.theNumberOfAlive,
+    required this.theNumberOfEntry,
+    required this.theNumberOfReEntry,
+    required this.theNumberOfAddOn,
+    this.updatedTime,
     required this.tournamentName,
     required this.entryFee,
     required this.reEntryFee,

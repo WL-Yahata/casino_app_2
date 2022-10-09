@@ -1,4 +1,4 @@
-import 'package:casino_app_2/view/owners%20view/owners%20Schedule/extraSchedulePage.dart';
+import 'package:casino_app_2/view/owners%20view/owners%20Schedule/listTournamentPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
@@ -29,7 +29,7 @@ class _OwnersSchedulePageState extends State<OwnersSchedulePage> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => const ExtraSchedulePage()));
+                    builder: (context) => const ListTournamentPage()));
           },
           backgroundColor: Colors.black45,
           child: const Icon(Icons.list),
