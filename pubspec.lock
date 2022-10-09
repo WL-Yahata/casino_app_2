@@ -52,10 +52,8 @@ packages:
     source: hosted
     version: "3.5.1"
   cloud_firestore_platform_interface:
-
-    version: "2.8.10"
-
   collection:
+    version: "2.8.10"
     dependency: transitive
     description:
       name: collection
