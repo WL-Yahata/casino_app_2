@@ -34,15 +34,26 @@ class _CashingPadeState extends State<CashingPade> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey.withOpacity(0.2),
+
       appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black45),
+
         centerTitle: true,
-        title: const Text(
-          'home',
-          style: TextStyle(color: Colors.black54),
-        ),
+
+
+        title: const Text('home', style: TextStyle(color: Colors.black54),),
+
+
+
         backgroundColor: Colors.white,
         elevation: 1,
       ),
+
+
+
+
+
+
       body: SingleChildScrollView(
         child: Column(
           children: [
